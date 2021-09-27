@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/produtos.css">
+		<link rel="stylesheet" href="css/responsivo.css">
+
+		<script>document.documentElement.classList.add("js");</script>
+
+		<title>SBlife</title>
+	</head>
+	<body>
+
+		<header class="header">
+			<div class="container">
+				<a href="index.html" class="grid-4">
+					<img src="img/logo/SBlife.svg" alt="SBlife">
+				</a>
+				<nav class="grid-12 header_menu">
+					<ul>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="produtos.html" class="menu_ativo">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="introducao-interna interna_produtos">
+			<div class="container">
+				<h1 data-anime="400" class="fadeInDown">Produtos</h1>
+				<p data-anime="800" class="fadeInDown">conheça todos os nossos produtos</p>
+			</div>
+		</section>
+
+		<section class="container produto_item fadeInDown" data-anime="1200">
+			<div class="grid-11">
+				<img src="img/penny1.jpg" alt="Penny1">
+				<h2>PENNY BOARD</h2>
+			</div>
+			<div class="grid-5 produto_icone"><img src="img/penny2.jpg" alt="Penny2"></div>
+			<div class="grid-8"><img src="img/penny3.jpg" alt="Penny3"></div>
+			<div class="grid-8 produto_info">
+				<p>Um meio de locomoção alternativo, é bom para curtir a sensação de deslizar sobre uma superfície plana.</p>
+				<ul>
+					<li>Conforto</li>
+					<li>Velocidade</li>
+					<li>Design</li>
+					<li>Versatilidade</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="container produto_item">
+			<div class="grid-11">
+				<img src="img/skate1.jpg" alt="Skate1">
+				<h2>SKATEBOARD</h2>
+			</div>
+			<div class="grid-5 produto_icone"><img src="img/skate2.jpg" alt="Skate2"></div>
+			<div class="grid-8"><img src="img/skate3.jpg" alt="Skate3"></div>
+			<div class="grid-8 produto_info">
+				<p>apropriado para usar em corrimões, bancos de praça e demais obstáculos presentes nas vias.</p>
+				<ul>
+					<li>Conforto</li>
+					<li>Velocidade</li>
+					<li>Design</li>
+					<li>Versatilidade</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="container produto_item">
+			<div class="grid-11">
+				<img src="img/long1.jpg" alt="Long1">
+				<h2>LONGBOARD</h2>
+			</div>
+			<div class="grid-5 produto_icone"><img src="img/long2.jpg" alt="Long2"></div>
+			<div class="grid-8"><img src="img/long3.jpg" alt="Long3"></div>
+			<div class="grid-8 produto_info">
+				<p>O long é o modelo ideal para descidas em alta velocidade, nas quais é possível fazer uma técnica  chamada de slide.</p>
+				<ul>
+					<li>Conforto</li>
+					<li>Velocidade</li>
+					<li>Design</li>
+					<li>Versatilidade</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="orcamento">
+			<div class="container">
+				<h2 class="subtitulo">Orçamento</h2>
+				<form id="form_orcamento" method="POST" action="./enviar.php" class="form grid-8 formphp">
+					<label for="nome">Nome</label>
+					<input type="text" id="nome" name="nome" required>
+					<label for="email">E-mail</label>
+					<input type="email" id="email" name="email" required>
+					<label for="telefone">Telefone</label>
+					<input type="text" id="telefone" name="telefone">
+
+					<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+					<input type="text" class="nao-aparece" name="leaveblank">
+					<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+					<input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+					<label for="mensagem">Mensagem</label>
+					<textarea id="mensagem" name="mensagem" required></textarea>
+					<button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
+				</form>
+				
+				<div class="orcamento_dados grid-8">
+					<h3>Dados</h3>
+					<span>+11 99111-5999</span>
+					<span>orcamento@SBlife.com</span>
+					<h3>Monte a sua SBlife</h3>
+					<p>Escolha as especificações:</p>
+					<ul>
+						<li>- Cores</li>
+						<li>- Estilo</li>
+						<li>- Medidas</li>
+						<li>- Acessórios</li>
+						<li>- E Outros</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="quebra">
+			<blockquote class="quote-externo container">
+				<p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
+				<cite>WILLIAM MORRIS</cite>
+			</blockquote>
+		</section>
+
+		<footer>
+			<div class="footer">
+				<div class="container">
+
+					<div class="grid-8 footer_historia">
+						<h3>Nossa História</h3>
+						<p>Criado por pessoas apaixonadas pelo skate e que procura o melhor.</p>
+					</div>
+
+					<div class="grid-4 footer_contato">
+						<h3>Contato</h3>
+						<ul>
+							<li>- 11-99111-5999</li>
+							<li>- Martinsga999@gmail.com</li>
+							<li>- São Paulo - SP</li>
+						</ul>
+					</div>
+
+					<div class="grid-4 footer_redes">
+						<h3>Contato</h3>
+						<ul>
+							<li><a href="http://instagram.com" target="_blank"><img src="img/redes sociais/instagram.svg"></a></li>
+							<li><a href="http://twitter.com" target="_blank"><img src="img/redes sociais/twitter.svg"></a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="copy">
+				<div class="container">
+					<p class="grid-16">SBlife 2021 - Alguns direitos reservados.</p>
+				</div>
+			</div>
+		</footer>
+		
+	<!-- JavaScript -->
+	<script src="./js/simple-slide.js"></script>
+	<script src="./js/simple-anime.js"></script>
+	<script src="./js/simple-form.js"></script>
+  	<script src="./js/script.js"></script>	
+	<!-- JavaScript -->
+
+	</body>
+</html>
